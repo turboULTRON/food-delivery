@@ -1,0 +1,108 @@
+.login-popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    display: grid;
+}
+.login-popup-container{
+    place-self: center;
+    width: max(23vw, 330px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+}
+.login-popup-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.login-popup-title img{
+    width: 16px;
+    cursor: pointer;
+}
+.login-popup-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.login-popup-inputs input{
+    /* outline: none; */
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 4px;
+    outline-color: tomato; /* Adds the desired outline color */
+    transition: all 0.3s ease; /* Smooth transition for outline color changes */   
+}
+.login-popup-inputs input:focus {
+    border-color: tomato; /* Highlight border when input is focused */
+    box-shadow: 0 0 5px rgba(255, 99, 71, 0.5); /* Adds a shadow effect */
+}
+.login-popup-container button{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: tomato;
+    font-size: 15px;
+    cursor: pointer;
+}
+.login-popup-condition{
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -15px;
+}
+.login-popup-condition input{
+    margin-top: 5px;
+    cursor: pointer;
+}
+.login-popup p span{
+    color: tomato;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+/* Responsive styles for smaller screens */
+@media (max-width:600px) {
+    .login-popup-container {
+        width: 90%; /* Use most of the screen width */
+        padding: 20px; /* Reduce padding */
+        gap: 15px; /* Reduce gap */
+        font-size: 13px; /* Reduce font size */
+    }
+
+    .login-popup-title img {
+        width: 14px; /* Adjust icon size */
+    }
+
+    .login-popup-inputs input {
+        padding: 8px; /* Reduce input padding */
+    }
+
+    .login-popup-container button {
+        padding: 8px; /* Reduce button padding */
+        font-size: 14px; /* Adjust button font size */
+    }
+
+    .login-popup-condition {
+        gap: 5px; /* Reduce gap between condition elements */
+    }
+
+    .login-popup-condition input {
+        margin-top: 3px; /* Adjust input position */
+    }
+}
+
