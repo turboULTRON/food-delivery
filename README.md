@@ -1,4 +1,4 @@
-#🍅 TOMATO — Food Delivery App (Frontend)
+# 🍅 TOMATO — Food Delivery App (Frontend)
 TOMATO is a sleek and responsive frontend interface for a food delivery platform, inspired by modern delivery services like Zomato and Swiggy. Built using React.js, the app offers a seamless and intuitive user experience for browsing restaurants, exploring menus, and placing orders.
 
 🚀 Features
