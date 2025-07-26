@@ -21,4 +21,4 @@ State Management: React Hooks (useState, useEffect)
 
 Styling: CSS modules / custom styling
 
-Deployment: (Optional: Add if hosted on GitHub Pages, Netlify, Vercel, etc.)
+Deployment: Vercel
